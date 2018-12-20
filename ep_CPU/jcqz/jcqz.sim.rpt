@@ -1,0 +1,360 @@
+Simulator report for jcqz
+Thu Jan 04 11:17:54 2018
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 165 nodes    ;
+; Simulation Coverage         ;      44.24 % ;
+; Total Number of Transitions ; 474          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; jcqz.vwf   ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      44.24 % ;
+; Total nodes checked                                 ; 165          ;
+; Total output ports checked                          ; 165          ;
+; Total output ports with complete 1/0-value coverage ; 73           ;
+; Total output ports with no 1/0-value coverage       ; 34           ;
+; Total output ports with no 1-value coverage         ; 42           ;
+; Total output ports with no 0-value coverage         ; 84           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------+
+; Complete 1/0-Value Coverage                              ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |jcqz|process_0~0 ; |jcqz|process_0~0 ; out0             ;
+; |jcqz|process_0~1 ; |jcqz|process_0~1 ; out0             ;
+; |jcqz|AJCQ~0      ; |jcqz|AJCQ~0      ; out              ;
+; |jcqz|AJCQ~1      ; |jcqz|AJCQ~1      ; out              ;
+; |jcqz|AJCQ~2      ; |jcqz|AJCQ~2      ; out              ;
+; |jcqz|AJCQ~3      ; |jcqz|AJCQ~3      ; out              ;
+; |jcqz|CJCQ~0      ; |jcqz|CJCQ~0      ; out              ;
+; |jcqz|CJCQ~1      ; |jcqz|CJCQ~1      ; out              ;
+; |jcqz|CJCQ~2      ; |jcqz|CJCQ~2      ; out              ;
+; |jcqz|CJCQ~3      ; |jcqz|CJCQ~3      ; out              ;
+; |jcqz|CJCQ~4      ; |jcqz|CJCQ~4      ; out              ;
+; |jcqz|CJCQ~5      ; |jcqz|CJCQ~5      ; out              ;
+; |jcqz|CJCQ~8      ; |jcqz|CJCQ~8      ; out              ;
+; |jcqz|CJCQ~9      ; |jcqz|CJCQ~9      ; out              ;
+; |jcqz|CJCQ~10     ; |jcqz|CJCQ~10     ; out              ;
+; |jcqz|CJCQ~11     ; |jcqz|CJCQ~11     ; out              ;
+; |jcqz|CJCQ~12     ; |jcqz|CJCQ~12     ; out              ;
+; |jcqz|CJCQ~13     ; |jcqz|CJCQ~13     ; out              ;
+; |jcqz|CJCQ~16     ; |jcqz|CJCQ~16     ; out              ;
+; |jcqz|CJCQ~17     ; |jcqz|CJCQ~17     ; out              ;
+; |jcqz|CJCQ~18     ; |jcqz|CJCQ~18     ; out              ;
+; |jcqz|CJCQ~19     ; |jcqz|CJCQ~19     ; out              ;
+; |jcqz|CJCQ~20     ; |jcqz|CJCQ~20     ; out              ;
+; |jcqz|CJCQ~21     ; |jcqz|CJCQ~21     ; out              ;
+; |jcqz|A[2]$latch  ; |jcqz|A[2]$latch  ; out              ;
+; |jcqz|A[2]~4      ; |jcqz|A[2]~4      ; out              ;
+; |jcqz|A[2]~5      ; |jcqz|A[2]~5      ; out              ;
+; |jcqz|A[3]$latch  ; |jcqz|A[3]$latch  ; out              ;
+; |jcqz|A[3]~6      ; |jcqz|A[3]~6      ; out              ;
+; |jcqz|A[3]~7      ; |jcqz|A[3]~7      ; out              ;
+; |jcqz|A[4]$latch  ; |jcqz|A[4]$latch  ; out              ;
+; |jcqz|A[4]~8      ; |jcqz|A[4]~8      ; out              ;
+; |jcqz|A[4]~9      ; |jcqz|A[4]~9      ; out              ;
+; |jcqz|A[5]$latch  ; |jcqz|A[5]$latch  ; out              ;
+; |jcqz|A[5]~11     ; |jcqz|A[5]~11     ; out              ;
+; |jcqz|A[6]$latch  ; |jcqz|A[6]$latch  ; out              ;
+; |jcqz|A[6]~13     ; |jcqz|A[6]~13     ; out              ;
+; |jcqz|A[7]$latch  ; |jcqz|A[7]$latch  ; out              ;
+; |jcqz|A[7]~15     ; |jcqz|A[7]~15     ; out0             ;
+; |jcqz|A[7]~16     ; |jcqz|A[7]~16     ; out              ;
+; |jcqz|A[7]~17     ; |jcqz|A[7]~17     ; out0             ;
+; |jcqz|B[2]$latch  ; |jcqz|B[2]$latch  ; out              ;
+; |jcqz|B[2]~4      ; |jcqz|B[2]~4      ; out              ;
+; |jcqz|B[2]~5      ; |jcqz|B[2]~5      ; out              ;
+; |jcqz|B[3]$latch  ; |jcqz|B[3]$latch  ; out              ;
+; |jcqz|B[3]~6      ; |jcqz|B[3]~6      ; out              ;
+; |jcqz|B[3]~7      ; |jcqz|B[3]~7      ; out              ;
+; |jcqz|B[4]$latch  ; |jcqz|B[4]$latch  ; out              ;
+; |jcqz|B[4]~8      ; |jcqz|B[4]~8      ; out              ;
+; |jcqz|B[4]~9      ; |jcqz|B[4]~9      ; out              ;
+; |jcqz|B[7]~15     ; |jcqz|B[7]~15     ; out0             ;
+; |jcqz|B[7]~17     ; |jcqz|B[7]~17     ; out0             ;
+; |jcqz|RA[0]       ; |jcqz|RA[0]       ; out              ;
+; |jcqz|RA[1]       ; |jcqz|RA[1]       ; out              ;
+; |jcqz|RB[1]       ; |jcqz|RB[1]       ; out              ;
+; |jcqz|NWE         ; |jcqz|NWE         ; out              ;
+; |jcqz|RESET       ; |jcqz|RESET       ; out              ;
+; |jcqz|CLK         ; |jcqz|CLK         ; out              ;
+; |jcqz|A[2]        ; |jcqz|A[2]        ; pin_out          ;
+; |jcqz|A[3]        ; |jcqz|A[3]        ; pin_out          ;
+; |jcqz|A[4]        ; |jcqz|A[4]        ; pin_out          ;
+; |jcqz|A[5]        ; |jcqz|A[5]        ; pin_out          ;
+; |jcqz|A[6]        ; |jcqz|A[6]        ; pin_out          ;
+; |jcqz|A[7]        ; |jcqz|A[7]        ; pin_out          ;
+; |jcqz|B[2]        ; |jcqz|B[2]        ; pin_out          ;
+; |jcqz|B[3]        ; |jcqz|B[3]        ; pin_out          ;
+; |jcqz|B[4]        ; |jcqz|B[4]        ; pin_out          ;
+; |jcqz|Equal0~0    ; |jcqz|Equal0~0    ; out0             ;
+; |jcqz|Equal2~0    ; |jcqz|Equal2~0    ; out0             ;
+; |jcqz|Equal4~0    ; |jcqz|Equal4~0    ; out0             ;
+; |jcqz|Equal5~0    ; |jcqz|Equal5~0    ; out0             ;
+; |jcqz|Equal6~0    ; |jcqz|Equal6~0    ; out0             ;
+; |jcqz|Equal7~0    ; |jcqz|Equal7~0    ; out0             ;
++-------------------+-------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------+
+; Missing 1-Value Coverage                             ;
++----------------+------------------+------------------+
+; Node Name      ; Output Port Name ; Output Port Type ;
++----------------+------------------+------------------+
+; |jcqz|BJCQ~0   ; |jcqz|BJCQ~0     ; out              ;
+; |jcqz|BJCQ~1   ; |jcqz|BJCQ~1     ; out              ;
+; |jcqz|BJCQ~2   ; |jcqz|BJCQ~2     ; out              ;
+; |jcqz|BJCQ~3   ; |jcqz|BJCQ~3     ; out              ;
+; |jcqz|BJCQ~4   ; |jcqz|BJCQ~4     ; out              ;
+; |jcqz|BJCQ~5   ; |jcqz|BJCQ~5     ; out              ;
+; |jcqz|BJCQ~6   ; |jcqz|BJCQ~6     ; out              ;
+; |jcqz|BJCQ~7   ; |jcqz|BJCQ~7     ; out              ;
+; |jcqz|BJCQ~8   ; |jcqz|BJCQ~8     ; out              ;
+; |jcqz|BJCQ~9   ; |jcqz|BJCQ~9     ; out              ;
+; |jcqz|BJCQ~10  ; |jcqz|BJCQ~10    ; out              ;
+; |jcqz|BJCQ~11  ; |jcqz|BJCQ~11    ; out              ;
+; |jcqz|BJCQ~12  ; |jcqz|BJCQ~12    ; out              ;
+; |jcqz|BJCQ~13  ; |jcqz|BJCQ~13    ; out              ;
+; |jcqz|BJCQ~14  ; |jcqz|BJCQ~14    ; out              ;
+; |jcqz|BJCQ~15  ; |jcqz|BJCQ~15    ; out              ;
+; |jcqz|BJCQ[7]  ; |jcqz|BJCQ[7]    ; regout           ;
+; |jcqz|BJCQ[6]  ; |jcqz|BJCQ[6]    ; regout           ;
+; |jcqz|BJCQ[5]  ; |jcqz|BJCQ[5]    ; regout           ;
+; |jcqz|CJCQ[7]  ; |jcqz|CJCQ[7]    ; regout           ;
+; |jcqz|CJCQ[6]  ; |jcqz|CJCQ[6]    ; regout           ;
+; |jcqz|CJCQ[5]  ; |jcqz|CJCQ[5]    ; regout           ;
+; |jcqz|CJCQ[4]  ; |jcqz|CJCQ[4]    ; regout           ;
+; |jcqz|CJCQ[3]  ; |jcqz|CJCQ[3]    ; regout           ;
+; |jcqz|CJCQ[2]  ; |jcqz|CJCQ[2]    ; regout           ;
+; |jcqz|A[5]~10  ; |jcqz|A[5]~10    ; out              ;
+; |jcqz|A[6]~12  ; |jcqz|A[6]~12    ; out              ;
+; |jcqz|A[7]~14  ; |jcqz|A[7]~14    ; out              ;
+; |jcqz|B[5]~10  ; |jcqz|B[5]~10    ; out              ;
+; |jcqz|B[6]~12  ; |jcqz|B[6]~12    ; out              ;
+; |jcqz|B[7]~14  ; |jcqz|B[7]~14    ; out              ;
+; |jcqz|RB[0]    ; |jcqz|RB[0]      ; out              ;
+; |jcqz|BUSS[0]  ; |jcqz|BUSS[0]    ; out              ;
+; |jcqz|BUSS[1]  ; |jcqz|BUSS[1]    ; out              ;
+; |jcqz|BUSS[2]  ; |jcqz|BUSS[2]    ; out              ;
+; |jcqz|BUSS[3]  ; |jcqz|BUSS[3]    ; out              ;
+; |jcqz|BUSS[4]  ; |jcqz|BUSS[4]    ; out              ;
+; |jcqz|BUSS[5]  ; |jcqz|BUSS[5]    ; out              ;
+; |jcqz|BUSS[6]  ; |jcqz|BUSS[6]    ; out              ;
+; |jcqz|BUSS[7]  ; |jcqz|BUSS[7]    ; out              ;
+; |jcqz|Equal1~0 ; |jcqz|Equal1~0   ; out0             ;
+; |jcqz|Equal3~0 ; |jcqz|Equal3~0   ; out0             ;
++----------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------+
+; Missing 0-Value Coverage                               ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |jcqz|CJCQ[0]    ; |jcqz|CJCQ[0]    ; regout           ;
+; |jcqz|AJCQ~4     ; |jcqz|AJCQ~4     ; out              ;
+; |jcqz|AJCQ~5     ; |jcqz|AJCQ~5     ; out              ;
+; |jcqz|AJCQ~6     ; |jcqz|AJCQ~6     ; out              ;
+; |jcqz|AJCQ~7     ; |jcqz|AJCQ~7     ; out              ;
+; |jcqz|BJCQ~3     ; |jcqz|BJCQ~3     ; out              ;
+; |jcqz|BJCQ~4     ; |jcqz|BJCQ~4     ; out              ;
+; |jcqz|BJCQ~5     ; |jcqz|BJCQ~5     ; out              ;
+; |jcqz|BJCQ~6     ; |jcqz|BJCQ~6     ; out              ;
+; |jcqz|BJCQ~7     ; |jcqz|BJCQ~7     ; out              ;
+; |jcqz|BJCQ~11    ; |jcqz|BJCQ~11    ; out              ;
+; |jcqz|BJCQ~12    ; |jcqz|BJCQ~12    ; out              ;
+; |jcqz|BJCQ~13    ; |jcqz|BJCQ~13    ; out              ;
+; |jcqz|BJCQ~14    ; |jcqz|BJCQ~14    ; out              ;
+; |jcqz|BJCQ~15    ; |jcqz|BJCQ~15    ; out              ;
+; |jcqz|CJCQ~6     ; |jcqz|CJCQ~6     ; out              ;
+; |jcqz|CJCQ~7     ; |jcqz|CJCQ~7     ; out              ;
+; |jcqz|CJCQ~14    ; |jcqz|CJCQ~14    ; out              ;
+; |jcqz|CJCQ~15    ; |jcqz|CJCQ~15    ; out              ;
+; |jcqz|CJCQ~22    ; |jcqz|CJCQ~22    ; out              ;
+; |jcqz|CJCQ~23    ; |jcqz|CJCQ~23    ; out              ;
+; |jcqz|AJCQ[7]    ; |jcqz|AJCQ[7]    ; regout           ;
+; |jcqz|AJCQ[6]    ; |jcqz|AJCQ[6]    ; regout           ;
+; |jcqz|AJCQ[5]    ; |jcqz|AJCQ[5]    ; regout           ;
+; |jcqz|AJCQ[4]    ; |jcqz|AJCQ[4]    ; regout           ;
+; |jcqz|AJCQ[3]    ; |jcqz|AJCQ[3]    ; regout           ;
+; |jcqz|AJCQ[2]    ; |jcqz|AJCQ[2]    ; regout           ;
+; |jcqz|AJCQ[1]    ; |jcqz|AJCQ[1]    ; regout           ;
+; |jcqz|AJCQ[0]    ; |jcqz|AJCQ[0]    ; regout           ;
+; |jcqz|BJCQ[7]    ; |jcqz|BJCQ[7]    ; regout           ;
+; |jcqz|BJCQ[6]    ; |jcqz|BJCQ[6]    ; regout           ;
+; |jcqz|BJCQ[5]    ; |jcqz|BJCQ[5]    ; regout           ;
+; |jcqz|BJCQ[4]    ; |jcqz|BJCQ[4]    ; regout           ;
+; |jcqz|BJCQ[3]    ; |jcqz|BJCQ[3]    ; regout           ;
+; |jcqz|BJCQ[2]    ; |jcqz|BJCQ[2]    ; regout           ;
+; |jcqz|BJCQ[1]    ; |jcqz|BJCQ[1]    ; regout           ;
+; |jcqz|BJCQ[0]    ; |jcqz|BJCQ[0]    ; regout           ;
+; |jcqz|CJCQ[7]    ; |jcqz|CJCQ[7]    ; regout           ;
+; |jcqz|CJCQ[6]    ; |jcqz|CJCQ[6]    ; regout           ;
+; |jcqz|CJCQ[5]    ; |jcqz|CJCQ[5]    ; regout           ;
+; |jcqz|CJCQ[4]    ; |jcqz|CJCQ[4]    ; regout           ;
+; |jcqz|CJCQ[3]    ; |jcqz|CJCQ[3]    ; regout           ;
+; |jcqz|CJCQ[2]    ; |jcqz|CJCQ[2]    ; regout           ;
+; |jcqz|CJCQ[1]    ; |jcqz|CJCQ[1]    ; regout           ;
+; |jcqz|A[0]~0     ; |jcqz|A[0]~0     ; out              ;
+; |jcqz|A[0]~1     ; |jcqz|A[0]~1     ; out              ;
+; |jcqz|A[1]$latch ; |jcqz|A[1]$latch ; out              ;
+; |jcqz|A[1]~2     ; |jcqz|A[1]~2     ; out              ;
+; |jcqz|A[1]~3     ; |jcqz|A[1]~3     ; out              ;
+; |jcqz|A[5]~10    ; |jcqz|A[5]~10    ; out              ;
+; |jcqz|A[6]~12    ; |jcqz|A[6]~12    ; out              ;
+; |jcqz|A[7]~14    ; |jcqz|A[7]~14    ; out              ;
+; |jcqz|B[0]$latch ; |jcqz|B[0]$latch ; out              ;
+; |jcqz|B[0]~0     ; |jcqz|B[0]~0     ; out              ;
+; |jcqz|B[0]~1     ; |jcqz|B[0]~1     ; out              ;
+; |jcqz|B[1]$latch ; |jcqz|B[1]$latch ; out              ;
+; |jcqz|B[1]~2     ; |jcqz|B[1]~2     ; out              ;
+; |jcqz|B[1]~3     ; |jcqz|B[1]~3     ; out              ;
+; |jcqz|B[5]$latch ; |jcqz|B[5]$latch ; out              ;
+; |jcqz|B[5]~10    ; |jcqz|B[5]~10    ; out              ;
+; |jcqz|B[5]~11    ; |jcqz|B[5]~11    ; out              ;
+; |jcqz|B[6]$latch ; |jcqz|B[6]$latch ; out              ;
+; |jcqz|B[6]~12    ; |jcqz|B[6]~12    ; out              ;
+; |jcqz|B[6]~13    ; |jcqz|B[6]~13    ; out              ;
+; |jcqz|B[7]$latch ; |jcqz|B[7]$latch ; out              ;
+; |jcqz|A[0]$latch ; |jcqz|A[0]$latch ; out              ;
+; |jcqz|B[7]~14    ; |jcqz|B[7]~14    ; out              ;
+; |jcqz|B[7]~16    ; |jcqz|B[7]~16    ; out              ;
+; |jcqz|BUSS[0]    ; |jcqz|BUSS[0]    ; out              ;
+; |jcqz|BUSS[1]    ; |jcqz|BUSS[1]    ; out              ;
+; |jcqz|BUSS[2]    ; |jcqz|BUSS[2]    ; out              ;
+; |jcqz|BUSS[3]    ; |jcqz|BUSS[3]    ; out              ;
+; |jcqz|BUSS[4]    ; |jcqz|BUSS[4]    ; out              ;
+; |jcqz|BUSS[5]    ; |jcqz|BUSS[5]    ; out              ;
+; |jcqz|BUSS[6]    ; |jcqz|BUSS[6]    ; out              ;
+; |jcqz|BUSS[7]    ; |jcqz|BUSS[7]    ; out              ;
+; |jcqz|A[0]       ; |jcqz|A[0]       ; pin_out          ;
+; |jcqz|A[1]       ; |jcqz|A[1]       ; pin_out          ;
+; |jcqz|B[0]       ; |jcqz|B[0]       ; pin_out          ;
+; |jcqz|B[1]       ; |jcqz|B[1]       ; pin_out          ;
+; |jcqz|B[5]       ; |jcqz|B[5]       ; pin_out          ;
+; |jcqz|B[6]       ; |jcqz|B[6]       ; pin_out          ;
+; |jcqz|B[7]       ; |jcqz|B[7]       ; pin_out          ;
+; |jcqz|Equal3~0   ; |jcqz|Equal3~0   ; out0             ;
++------------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Jan 04 11:17:54 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off jcqz -c jcqz
+Info: Using vector source file "D:/EX_CPU/jcqz/jcqz.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      44.24 %
+Info: Number of transitions in simulation is 474
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 209 megabytes
+    Info: Processing ended: Thu Jan 04 11:17:54 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

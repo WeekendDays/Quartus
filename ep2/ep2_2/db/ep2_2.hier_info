@@ -1,0 +1,48 @@
+|ep2_2
+A0[0] => st2_1:g0.A[0]
+A0[1] => st2_1:g0.A[1]
+A0[2] => st2_1:g0.A[2]
+A0[3] => st2_1:g0.A[3]
+A0[4] => st2_1:g0.A[4]
+A0[5] => st2_1:g0.A[5]
+A0[6] => st2_1:g0.A[6]
+A0[7] => st2_1:g0.A[7]
+A0[8] => st2_1:g0.A[8]
+A0[9] => st2_1:g0.A[9]
+A0[10] => st2_1:g0.A[10]
+A0[11] => st2_1:g0.A[11]
+A0[12] => st2_1:g0.A[12]
+A0[13] => st2_1:g0.A[13]
+A0[14] => st2_1:g0.A[14]
+A0[15] => st2_1:g0.A[15]
+EN0[0] => st2_1:g0.EN[0]
+EN0[1] => st2_1:g0.EN[1]
+EN0[2] => st2_1:g0.EN[2]
+EN0[3] => st2_1:g0.EN[3]
+B0 <= st2_1:g0.B
+
+
+|ep2_2|st2_1:g0
+A[0] => Mux0.IN15
+A[1] => Mux0.IN14
+A[2] => Mux0.IN13
+A[3] => Mux0.IN12
+A[4] => Mux0.IN11
+A[5] => Mux0.IN10
+A[6] => Mux0.IN9
+A[7] => Mux0.IN8
+A[8] => Mux0.IN7
+A[9] => Mux0.IN6
+A[10] => Mux0.IN5
+A[11] => Mux0.IN4
+A[12] => Mux0.IN3
+A[13] => Mux0.IN2
+A[14] => Mux0.IN1
+A[15] => Mux0.IN0
+EN[0] => Mux0.IN19
+EN[1] => Mux0.IN18
+EN[2] => Mux0.IN17
+EN[3] => Mux0.IN16
+B <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

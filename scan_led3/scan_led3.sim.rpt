@@ -1,0 +1,470 @@
+Simulator report for scan_led3
+Mon Oct 29 22:56:20 2018
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 147 nodes    ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Option                                                                                     ; Setting      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Simulation mode                                                                            ; Functional   ; Timing        ;
+; Start time                                                                                 ; 0 ns         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF         ;               ;
+; Vector input source                                                                        ; counter4.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; Off          ; On            ;
+; Check outputs                                                                              ; Off          ; Off           ;
+; Report simulation coverage                                                                 ; On           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
+; Display missing 1-value coverage report                                                    ; On           ; On            ;
+; Display missing 0-value coverage report                                                    ; On           ; On            ;
+; Detect setup and hold time violations                                                      ; Off          ; Off           ;
+; Detect glitches                                                                            ; Off          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
+; Generate Signal Activity File                                                              ; Off          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 147          ;
+; Total output ports checked                          ; 147          ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 147          ;
+; Total output ports with no 1-value coverage         ; 147          ;
+; Total output ports with no 0-value coverage         ; 147          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                 ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |scan_led3|outclk                                 ; |scan_led3|outclk                                 ; pin_out          ;
+; |scan_led3|clk                                    ; |scan_led3|clk                                    ; out              ;
+; |scan_led3|A                                      ; |scan_led3|A                                      ; pin_out          ;
+; |scan_led3|din0[3]                                ; |scan_led3|din0[3]                                ; out              ;
+; |scan_led3|din0[2]                                ; |scan_led3|din0[2]                                ; out              ;
+; |scan_led3|din0[1]                                ; |scan_led3|din0[1]                                ; out              ;
+; |scan_led3|din0[0]                                ; |scan_led3|din0[0]                                ; out              ;
+; |scan_led3|din1[3]                                ; |scan_led3|din1[3]                                ; out              ;
+; |scan_led3|din1[2]                                ; |scan_led3|din1[2]                                ; out              ;
+; |scan_led3|din1[1]                                ; |scan_led3|din1[1]                                ; out              ;
+; |scan_led3|din1[0]                                ; |scan_led3|din1[0]                                ; out              ;
+; |scan_led3|din2[3]                                ; |scan_led3|din2[3]                                ; out              ;
+; |scan_led3|din2[2]                                ; |scan_led3|din2[2]                                ; out              ;
+; |scan_led3|din2[1]                                ; |scan_led3|din2[1]                                ; out              ;
+; |scan_led3|din2[0]                                ; |scan_led3|din2[0]                                ; out              ;
+; |scan_led3|sel[1]                                 ; |scan_led3|sel[1]                                 ; pin_out          ;
+; |scan_led3|sel[0]                                 ; |scan_led3|sel[0]                                 ; pin_out          ;
+; |scan_led3|B                                      ; |scan_led3|B                                      ; pin_out          ;
+; |scan_led3|C                                      ; |scan_led3|C                                      ; pin_out          ;
+; |scan_led3|D                                      ; |scan_led3|D                                      ; pin_out          ;
+; |scan_led3|E                                      ; |scan_led3|E                                      ; pin_out          ;
+; |scan_led3|F                                      ; |scan_led3|F                                      ; pin_out          ;
+; |scan_led3|G                                      ; |scan_led3|G                                      ; pin_out          ;
+; |scan_led3|bsg[2]                                 ; |scan_led3|bsg[2]                                 ; pin_out          ;
+; |scan_led3|bsg[1]                                 ; |scan_led3|bsg[1]                                 ; pin_out          ;
+; |scan_led3|bsg[0]                                 ; |scan_led3|bsg[0]                                 ; pin_out          ;
+; |scan_led3|decoder2_3:inst2|inst4                 ; |scan_led3|decoder2_3:inst2|inst4                 ; out0             ;
+; |scan_led3|decoder2_3:inst2|74139:inst|33         ; |scan_led3|decoder2_3:inst2|74139:inst|33         ; out0             ;
+; |scan_led3|decoder2_3:inst2|74139:inst|34         ; |scan_led3|decoder2_3:inst2|74139:inst|34         ; out0             ;
+; |scan_led3|decoder2_3:inst2|74139:inst|35         ; |scan_led3|decoder2_3:inst2|74139:inst|35         ; out0             ;
+; |scan_led3|decoder2_3:inst2|74139:inst|36         ; |scan_led3|decoder2_3:inst2|74139:inst|36         ; out0             ;
+; |scan_led3|counter4:inst|inst5                    ; |scan_led3|counter4:inst|inst5                    ; regout           ;
+; |scan_led3|counter4:inst|inst4                    ; |scan_led3|counter4:inst|inst4                    ; out0             ;
+; |scan_led3|counter4:inst|74161:inst|f74161:sub|87 ; |scan_led3|counter4:inst|74161:inst|f74161:sub|87 ; regout           ;
+; |scan_led3|counter4:inst|74161:inst|f74161:sub|90 ; |scan_led3|counter4:inst|74161:inst|f74161:sub|90 ; out0             ;
+; |scan_led3|counter4:inst|74161:inst|f74161:sub|81 ; |scan_led3|counter4:inst|74161:inst|f74161:sub|81 ; out0             ;
+; |scan_led3|counter4:inst|74161:inst|f74161:sub|9  ; |scan_led3|counter4:inst|74161:inst|f74161:sub|9  ; regout           ;
+; |scan_led3|mux4_3_1:inst3|dout~0                  ; |scan_led3|mux4_3_1:inst3|dout~0                  ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout~1                  ; |scan_led3|mux4_3_1:inst3|dout~1                  ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout~2                  ; |scan_led3|mux4_3_1:inst3|dout~2                  ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout~3                  ; |scan_led3|mux4_3_1:inst3|dout~3                  ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout[3]                 ; |scan_led3|mux4_3_1:inst3|dout[3]                 ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout[2]                 ; |scan_led3|mux4_3_1:inst3|dout[2]                 ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout[1]                 ; |scan_led3|mux4_3_1:inst3|dout[1]                 ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout[0]                 ; |scan_led3|mux4_3_1:inst3|dout[0]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~0                  ; |scan_led3|scan_led:inst6|cout~0                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~1                  ; |scan_led3|scan_led:inst6|cout~1                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~2                  ; |scan_led3|scan_led:inst6|cout~2                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~3                  ; |scan_led3|scan_led:inst6|cout~3                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~4                  ; |scan_led3|scan_led:inst6|cout~4                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~5                  ; |scan_led3|scan_led:inst6|cout~5                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~6                  ; |scan_led3|scan_led:inst6|cout~6                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~7                  ; |scan_led3|scan_led:inst6|cout~7                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~8                  ; |scan_led3|scan_led:inst6|cout~8                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~9                  ; |scan_led3|scan_led:inst6|cout~9                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~10                 ; |scan_led3|scan_led:inst6|cout~10                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~11                 ; |scan_led3|scan_led:inst6|cout~11                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~12                 ; |scan_led3|scan_led:inst6|cout~12                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~13                 ; |scan_led3|scan_led:inst6|cout~13                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~14                 ; |scan_led3|scan_led:inst6|cout~14                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~15                 ; |scan_led3|scan_led:inst6|cout~15                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~16                 ; |scan_led3|scan_led:inst6|cout~16                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~17                 ; |scan_led3|scan_led:inst6|cout~17                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~18                 ; |scan_led3|scan_led:inst6|cout~18                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~19                 ; |scan_led3|scan_led:inst6|cout~19                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~20                 ; |scan_led3|scan_led:inst6|cout~20                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~21                 ; |scan_led3|scan_led:inst6|cout~21                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~22                 ; |scan_led3|scan_led:inst6|cout~22                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~23                 ; |scan_led3|scan_led:inst6|cout~23                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~24                 ; |scan_led3|scan_led:inst6|cout~24                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~25                 ; |scan_led3|scan_led:inst6|cout~25                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~26                 ; |scan_led3|scan_led:inst6|cout~26                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~27                 ; |scan_led3|scan_led:inst6|cout~27                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~28                 ; |scan_led3|scan_led:inst6|cout~28                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~29                 ; |scan_led3|scan_led:inst6|cout~29                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~30                 ; |scan_led3|scan_led:inst6|cout~30                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~31                 ; |scan_led3|scan_led:inst6|cout~31                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~32                 ; |scan_led3|scan_led:inst6|cout~32                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~33                 ; |scan_led3|scan_led:inst6|cout~33                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~34                 ; |scan_led3|scan_led:inst6|cout~34                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~35                 ; |scan_led3|scan_led:inst6|cout~35                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~36                 ; |scan_led3|scan_led:inst6|cout~36                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~37                 ; |scan_led3|scan_led:inst6|cout~37                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~38                 ; |scan_led3|scan_led:inst6|cout~38                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~39                 ; |scan_led3|scan_led:inst6|cout~39                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~40                 ; |scan_led3|scan_led:inst6|cout~40                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~41                 ; |scan_led3|scan_led:inst6|cout~41                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~42                 ; |scan_led3|scan_led:inst6|cout~42                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~43                 ; |scan_led3|scan_led:inst6|cout~43                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~44                 ; |scan_led3|scan_led:inst6|cout~44                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~45                 ; |scan_led3|scan_led:inst6|cout~45                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~46                 ; |scan_led3|scan_led:inst6|cout~46                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~47                 ; |scan_led3|scan_led:inst6|cout~47                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~48                 ; |scan_led3|scan_led:inst6|cout~48                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~49                 ; |scan_led3|scan_led:inst6|cout~49                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~50                 ; |scan_led3|scan_led:inst6|cout~50                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~51                 ; |scan_led3|scan_led:inst6|cout~51                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~52                 ; |scan_led3|scan_led:inst6|cout~52                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~53                 ; |scan_led3|scan_led:inst6|cout~53                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~54                 ; |scan_led3|scan_led:inst6|cout~54                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~55                 ; |scan_led3|scan_led:inst6|cout~55                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~56                 ; |scan_led3|scan_led:inst6|cout~56                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~57                 ; |scan_led3|scan_led:inst6|cout~57                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~58                 ; |scan_led3|scan_led:inst6|cout~58                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~59                 ; |scan_led3|scan_led:inst6|cout~59                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~60                 ; |scan_led3|scan_led:inst6|cout~60                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~61                 ; |scan_led3|scan_led:inst6|cout~61                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~62                 ; |scan_led3|scan_led:inst6|cout~62                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~63                 ; |scan_led3|scan_led:inst6|cout~63                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~64                 ; |scan_led3|scan_led:inst6|cout~64                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~65                 ; |scan_led3|scan_led:inst6|cout~65                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~66                 ; |scan_led3|scan_led:inst6|cout~66                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~67                 ; |scan_led3|scan_led:inst6|cout~67                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~68                 ; |scan_led3|scan_led:inst6|cout~68                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~69                 ; |scan_led3|scan_led:inst6|cout~69                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~70                 ; |scan_led3|scan_led:inst6|cout~70                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~71                 ; |scan_led3|scan_led:inst6|cout~71                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~72                 ; |scan_led3|scan_led:inst6|cout~72                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~73                 ; |scan_led3|scan_led:inst6|cout~73                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~74                 ; |scan_led3|scan_led:inst6|cout~74                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~75                 ; |scan_led3|scan_led:inst6|cout~75                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~76                 ; |scan_led3|scan_led:inst6|cout~76                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~77                 ; |scan_led3|scan_led:inst6|cout~77                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[6]                 ; |scan_led3|scan_led:inst6|cout[6]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[5]                 ; |scan_led3|scan_led:inst6|cout[5]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[4]                 ; |scan_led3|scan_led:inst6|cout[4]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[3]                 ; |scan_led3|scan_led:inst6|cout[3]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[2]                 ; |scan_led3|scan_led:inst6|cout[2]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[1]                 ; |scan_led3|scan_led:inst6|cout[1]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[0]                 ; |scan_led3|scan_led:inst6|cout[0]                 ; out              ;
+; |scan_led3|mux4_3_1:inst3|Equal0~0                ; |scan_led3|mux4_3_1:inst3|Equal0~0                ; out0             ;
+; |scan_led3|mux4_3_1:inst3|Equal1~0                ; |scan_led3|mux4_3_1:inst3|Equal1~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal0~0                ; |scan_led3|scan_led:inst6|Equal0~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal1~0                ; |scan_led3|scan_led:inst6|Equal1~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal2~0                ; |scan_led3|scan_led:inst6|Equal2~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal3~0                ; |scan_led3|scan_led:inst6|Equal3~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal4~0                ; |scan_led3|scan_led:inst6|Equal4~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal5~0                ; |scan_led3|scan_led:inst6|Equal5~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal6~0                ; |scan_led3|scan_led:inst6|Equal6~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal7~0                ; |scan_led3|scan_led:inst6|Equal7~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal8~0                ; |scan_led3|scan_led:inst6|Equal8~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal9~0                ; |scan_led3|scan_led:inst6|Equal9~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal10~0               ; |scan_led3|scan_led:inst6|Equal10~0               ; out0             ;
+; |scan_led3|scan_led:inst6|Equal11~0               ; |scan_led3|scan_led:inst6|Equal11~0               ; out0             ;
+; |scan_led3|scan_led:inst6|Equal12~0               ; |scan_led3|scan_led:inst6|Equal12~0               ; out0             ;
+; |scan_led3|scan_led:inst6|Equal13~0               ; |scan_led3|scan_led:inst6|Equal13~0               ; out0             ;
+; |scan_led3|scan_led:inst6|Equal14~0               ; |scan_led3|scan_led:inst6|Equal14~0               ; out0             ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                 ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |scan_led3|outclk                                 ; |scan_led3|outclk                                 ; pin_out          ;
+; |scan_led3|clk                                    ; |scan_led3|clk                                    ; out              ;
+; |scan_led3|A                                      ; |scan_led3|A                                      ; pin_out          ;
+; |scan_led3|din0[3]                                ; |scan_led3|din0[3]                                ; out              ;
+; |scan_led3|din0[2]                                ; |scan_led3|din0[2]                                ; out              ;
+; |scan_led3|din0[1]                                ; |scan_led3|din0[1]                                ; out              ;
+; |scan_led3|din0[0]                                ; |scan_led3|din0[0]                                ; out              ;
+; |scan_led3|din1[3]                                ; |scan_led3|din1[3]                                ; out              ;
+; |scan_led3|din1[2]                                ; |scan_led3|din1[2]                                ; out              ;
+; |scan_led3|din1[1]                                ; |scan_led3|din1[1]                                ; out              ;
+; |scan_led3|din1[0]                                ; |scan_led3|din1[0]                                ; out              ;
+; |scan_led3|din2[3]                                ; |scan_led3|din2[3]                                ; out              ;
+; |scan_led3|din2[2]                                ; |scan_led3|din2[2]                                ; out              ;
+; |scan_led3|din2[1]                                ; |scan_led3|din2[1]                                ; out              ;
+; |scan_led3|din2[0]                                ; |scan_led3|din2[0]                                ; out              ;
+; |scan_led3|sel[1]                                 ; |scan_led3|sel[1]                                 ; pin_out          ;
+; |scan_led3|sel[0]                                 ; |scan_led3|sel[0]                                 ; pin_out          ;
+; |scan_led3|B                                      ; |scan_led3|B                                      ; pin_out          ;
+; |scan_led3|C                                      ; |scan_led3|C                                      ; pin_out          ;
+; |scan_led3|D                                      ; |scan_led3|D                                      ; pin_out          ;
+; |scan_led3|E                                      ; |scan_led3|E                                      ; pin_out          ;
+; |scan_led3|F                                      ; |scan_led3|F                                      ; pin_out          ;
+; |scan_led3|G                                      ; |scan_led3|G                                      ; pin_out          ;
+; |scan_led3|bsg[2]                                 ; |scan_led3|bsg[2]                                 ; pin_out          ;
+; |scan_led3|bsg[1]                                 ; |scan_led3|bsg[1]                                 ; pin_out          ;
+; |scan_led3|bsg[0]                                 ; |scan_led3|bsg[0]                                 ; pin_out          ;
+; |scan_led3|decoder2_3:inst2|inst4                 ; |scan_led3|decoder2_3:inst2|inst4                 ; out0             ;
+; |scan_led3|decoder2_3:inst2|74139:inst|33         ; |scan_led3|decoder2_3:inst2|74139:inst|33         ; out0             ;
+; |scan_led3|decoder2_3:inst2|74139:inst|34         ; |scan_led3|decoder2_3:inst2|74139:inst|34         ; out0             ;
+; |scan_led3|decoder2_3:inst2|74139:inst|35         ; |scan_led3|decoder2_3:inst2|74139:inst|35         ; out0             ;
+; |scan_led3|decoder2_3:inst2|74139:inst|36         ; |scan_led3|decoder2_3:inst2|74139:inst|36         ; out0             ;
+; |scan_led3|counter4:inst|inst5                    ; |scan_led3|counter4:inst|inst5                    ; regout           ;
+; |scan_led3|counter4:inst|inst4                    ; |scan_led3|counter4:inst|inst4                    ; out0             ;
+; |scan_led3|counter4:inst|74161:inst|f74161:sub|87 ; |scan_led3|counter4:inst|74161:inst|f74161:sub|87 ; regout           ;
+; |scan_led3|counter4:inst|74161:inst|f74161:sub|90 ; |scan_led3|counter4:inst|74161:inst|f74161:sub|90 ; out0             ;
+; |scan_led3|counter4:inst|74161:inst|f74161:sub|81 ; |scan_led3|counter4:inst|74161:inst|f74161:sub|81 ; out0             ;
+; |scan_led3|counter4:inst|74161:inst|f74161:sub|9  ; |scan_led3|counter4:inst|74161:inst|f74161:sub|9  ; regout           ;
+; |scan_led3|mux4_3_1:inst3|dout~0                  ; |scan_led3|mux4_3_1:inst3|dout~0                  ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout~1                  ; |scan_led3|mux4_3_1:inst3|dout~1                  ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout~2                  ; |scan_led3|mux4_3_1:inst3|dout~2                  ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout~3                  ; |scan_led3|mux4_3_1:inst3|dout~3                  ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout[3]                 ; |scan_led3|mux4_3_1:inst3|dout[3]                 ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout[2]                 ; |scan_led3|mux4_3_1:inst3|dout[2]                 ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout[1]                 ; |scan_led3|mux4_3_1:inst3|dout[1]                 ; out              ;
+; |scan_led3|mux4_3_1:inst3|dout[0]                 ; |scan_led3|mux4_3_1:inst3|dout[0]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~0                  ; |scan_led3|scan_led:inst6|cout~0                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~1                  ; |scan_led3|scan_led:inst6|cout~1                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~2                  ; |scan_led3|scan_led:inst6|cout~2                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~3                  ; |scan_led3|scan_led:inst6|cout~3                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~4                  ; |scan_led3|scan_led:inst6|cout~4                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~5                  ; |scan_led3|scan_led:inst6|cout~5                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~6                  ; |scan_led3|scan_led:inst6|cout~6                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~7                  ; |scan_led3|scan_led:inst6|cout~7                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~8                  ; |scan_led3|scan_led:inst6|cout~8                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~9                  ; |scan_led3|scan_led:inst6|cout~9                  ; out              ;
+; |scan_led3|scan_led:inst6|cout~10                 ; |scan_led3|scan_led:inst6|cout~10                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~11                 ; |scan_led3|scan_led:inst6|cout~11                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~12                 ; |scan_led3|scan_led:inst6|cout~12                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~13                 ; |scan_led3|scan_led:inst6|cout~13                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~14                 ; |scan_led3|scan_led:inst6|cout~14                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~15                 ; |scan_led3|scan_led:inst6|cout~15                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~16                 ; |scan_led3|scan_led:inst6|cout~16                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~17                 ; |scan_led3|scan_led:inst6|cout~17                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~18                 ; |scan_led3|scan_led:inst6|cout~18                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~19                 ; |scan_led3|scan_led:inst6|cout~19                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~20                 ; |scan_led3|scan_led:inst6|cout~20                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~21                 ; |scan_led3|scan_led:inst6|cout~21                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~22                 ; |scan_led3|scan_led:inst6|cout~22                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~23                 ; |scan_led3|scan_led:inst6|cout~23                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~24                 ; |scan_led3|scan_led:inst6|cout~24                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~25                 ; |scan_led3|scan_led:inst6|cout~25                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~26                 ; |scan_led3|scan_led:inst6|cout~26                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~27                 ; |scan_led3|scan_led:inst6|cout~27                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~28                 ; |scan_led3|scan_led:inst6|cout~28                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~29                 ; |scan_led3|scan_led:inst6|cout~29                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~30                 ; |scan_led3|scan_led:inst6|cout~30                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~31                 ; |scan_led3|scan_led:inst6|cout~31                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~32                 ; |scan_led3|scan_led:inst6|cout~32                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~33                 ; |scan_led3|scan_led:inst6|cout~33                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~34                 ; |scan_led3|scan_led:inst6|cout~34                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~35                 ; |scan_led3|scan_led:inst6|cout~35                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~36                 ; |scan_led3|scan_led:inst6|cout~36                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~37                 ; |scan_led3|scan_led:inst6|cout~37                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~38                 ; |scan_led3|scan_led:inst6|cout~38                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~39                 ; |scan_led3|scan_led:inst6|cout~39                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~40                 ; |scan_led3|scan_led:inst6|cout~40                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~41                 ; |scan_led3|scan_led:inst6|cout~41                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~42                 ; |scan_led3|scan_led:inst6|cout~42                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~43                 ; |scan_led3|scan_led:inst6|cout~43                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~44                 ; |scan_led3|scan_led:inst6|cout~44                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~45                 ; |scan_led3|scan_led:inst6|cout~45                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~46                 ; |scan_led3|scan_led:inst6|cout~46                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~47                 ; |scan_led3|scan_led:inst6|cout~47                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~48                 ; |scan_led3|scan_led:inst6|cout~48                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~49                 ; |scan_led3|scan_led:inst6|cout~49                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~50                 ; |scan_led3|scan_led:inst6|cout~50                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~51                 ; |scan_led3|scan_led:inst6|cout~51                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~52                 ; |scan_led3|scan_led:inst6|cout~52                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~53                 ; |scan_led3|scan_led:inst6|cout~53                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~54                 ; |scan_led3|scan_led:inst6|cout~54                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~55                 ; |scan_led3|scan_led:inst6|cout~55                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~56                 ; |scan_led3|scan_led:inst6|cout~56                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~57                 ; |scan_led3|scan_led:inst6|cout~57                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~58                 ; |scan_led3|scan_led:inst6|cout~58                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~59                 ; |scan_led3|scan_led:inst6|cout~59                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~60                 ; |scan_led3|scan_led:inst6|cout~60                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~61                 ; |scan_led3|scan_led:inst6|cout~61                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~62                 ; |scan_led3|scan_led:inst6|cout~62                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~63                 ; |scan_led3|scan_led:inst6|cout~63                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~64                 ; |scan_led3|scan_led:inst6|cout~64                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~65                 ; |scan_led3|scan_led:inst6|cout~65                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~66                 ; |scan_led3|scan_led:inst6|cout~66                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~67                 ; |scan_led3|scan_led:inst6|cout~67                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~68                 ; |scan_led3|scan_led:inst6|cout~68                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~69                 ; |scan_led3|scan_led:inst6|cout~69                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~70                 ; |scan_led3|scan_led:inst6|cout~70                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~71                 ; |scan_led3|scan_led:inst6|cout~71                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~72                 ; |scan_led3|scan_led:inst6|cout~72                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~73                 ; |scan_led3|scan_led:inst6|cout~73                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~74                 ; |scan_led3|scan_led:inst6|cout~74                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~75                 ; |scan_led3|scan_led:inst6|cout~75                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~76                 ; |scan_led3|scan_led:inst6|cout~76                 ; out              ;
+; |scan_led3|scan_led:inst6|cout~77                 ; |scan_led3|scan_led:inst6|cout~77                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[6]                 ; |scan_led3|scan_led:inst6|cout[6]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[5]                 ; |scan_led3|scan_led:inst6|cout[5]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[4]                 ; |scan_led3|scan_led:inst6|cout[4]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[3]                 ; |scan_led3|scan_led:inst6|cout[3]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[2]                 ; |scan_led3|scan_led:inst6|cout[2]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[1]                 ; |scan_led3|scan_led:inst6|cout[1]                 ; out              ;
+; |scan_led3|scan_led:inst6|cout[0]                 ; |scan_led3|scan_led:inst6|cout[0]                 ; out              ;
+; |scan_led3|mux4_3_1:inst3|Equal0~0                ; |scan_led3|mux4_3_1:inst3|Equal0~0                ; out0             ;
+; |scan_led3|mux4_3_1:inst3|Equal1~0                ; |scan_led3|mux4_3_1:inst3|Equal1~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal0~0                ; |scan_led3|scan_led:inst6|Equal0~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal1~0                ; |scan_led3|scan_led:inst6|Equal1~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal2~0                ; |scan_led3|scan_led:inst6|Equal2~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal3~0                ; |scan_led3|scan_led:inst6|Equal3~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal4~0                ; |scan_led3|scan_led:inst6|Equal4~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal5~0                ; |scan_led3|scan_led:inst6|Equal5~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal6~0                ; |scan_led3|scan_led:inst6|Equal6~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal7~0                ; |scan_led3|scan_led:inst6|Equal7~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal8~0                ; |scan_led3|scan_led:inst6|Equal8~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal9~0                ; |scan_led3|scan_led:inst6|Equal9~0                ; out0             ;
+; |scan_led3|scan_led:inst6|Equal10~0               ; |scan_led3|scan_led:inst6|Equal10~0               ; out0             ;
+; |scan_led3|scan_led:inst6|Equal11~0               ; |scan_led3|scan_led:inst6|Equal11~0               ; out0             ;
+; |scan_led3|scan_led:inst6|Equal12~0               ; |scan_led3|scan_led:inst6|Equal12~0               ; out0             ;
+; |scan_led3|scan_led:inst6|Equal13~0               ; |scan_led3|scan_led:inst6|Equal13~0               ; out0             ;
+; |scan_led3|scan_led:inst6|Equal14~0               ; |scan_led3|scan_led:inst6|Equal14~0               ; out0             ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Oct 29 22:56:19 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off scan_led3 -c scan_led3
+Info: Using vector source file "C:/Users/istil/Desktop/istillmessup/Quartus/scan_led3/counter4.vwf"
+Warning: Can't find node "counter4:inst|clk" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "counter4:inst|q[0]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "counter4:inst|q[1]" for functional simulation. Ignored vector source file node.
+Warning: Can't find signal in vector source file for input pin "|scan_led3|clk"
+Warning: Can't find signal in vector source file for input pin "|scan_led3|din0[3]"
+Warning: Can't find signal in vector source file for input pin "|scan_led3|din0[2]"
+Warning: Can't find signal in vector source file for input pin "|scan_led3|din0[1]"
+Warning: Can't find signal in vector source file for input pin "|scan_led3|din0[0]"
+Warning: Can't find signal in vector source file for input pin "|scan_led3|din1[3]"
+Warning: Can't find signal in vector source file for input pin "|scan_led3|din1[2]"
+Warning: Can't find signal in vector source file for input pin "|scan_led3|din1[1]"
+Warning: Can't find signal in vector source file for input pin "|scan_led3|din1[0]"
+Warning: Can't find signal in vector source file for input pin "|scan_led3|din2[3]"
+Warning: Can't find signal in vector source file for input pin "|scan_led3|din2[2]"
+Warning: Can't find signal in vector source file for input pin "|scan_led3|din2[1]"
+Warning: Can't find signal in vector source file for input pin "|scan_led3|din2[0]"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 0
+Info: Quartus II Simulator was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 177 megabytes
+    Info: Processing ended: Mon Oct 29 22:56:20 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

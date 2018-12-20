@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity zljsq is 
+port( BUSS: in std_logic_vector(7 downto 0);
+	  LDPC,INPC,CLK: in std_logic;
+	  output: out std_logic_vector(7 downto 0));
+end zljsq;
+architecture fcn of zljsq is
+signal address:std_logic_vector(7 downto 0):="00000000";
+begin
+process(BUSS,LDPC,INPC)
+variable C:std_logic:='1';
+begin
+if (CLK'EVENT AND CLK='1') THEN
+	if (INPC='1'and LDPC='0') then
+		for i in 0 to 7 loop
+			address(i) <= C xor address(i);
+			C:=C and address(i);
+		end loop;
+		C:='1';
+	elsif (INPC='0' and LDPC='1') then
+		address <= BUSS;
+	end if;
+end if;
+output <= address;
+end process;
+end fcn;

@@ -1,0 +1,66 @@
+|ep3_2_1
+out <= srg4:inst2.SO
+srinput => srg4:inst3.SI
+clk => inst1.IN0
+shift => inst.IN0
+reset => srg4:inst3.clrn
+reset => inst4.ACLR
+reset => srg4:inst2.clrn
+out1[0] <= srg4:inst3.out[0]
+out1[1] <= srg4:inst3.out[1]
+out1[2] <= srg4:inst3.out[2]
+out1[3] <= srg4:inst3.out[3]
+out2[0] <= srg4:inst2.out[0]
+out2[1] <= srg4:inst2.out[1]
+out2[2] <= srg4:inst2.out[2]
+out2[3] <= srg4:inst2.out[3]
+
+
+|ep3_2_1|srg4:inst2
+SO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clrn => inst.ACLR
+clrn => inst1.ACLR
+clrn => inst3.ACLR
+clrn => inst2.ACLR
+clk => inst.CLK
+clk => inst1.CLK
+clk => inst3.CLK
+clk => inst2.CLK
+SI => inst.DATAIN
+
+
+|ep3_2_1|FA:inst5
+S <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst6.IN0
+X => inst5.IN0
+Y => inst.IN1
+Y => inst7.IN0
+Y => inst5.IN1
+Z => inst4.IN1
+Z => inst6.IN1
+Z => inst7.IN1
+C <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ep3_2_1|srg4:inst3
+SO <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clrn => inst.ACLR
+clrn => inst1.ACLR
+clrn => inst3.ACLR
+clrn => inst2.ACLR
+clk => inst.CLK
+clk => inst1.CLK
+clk => inst3.CLK
+clk => inst2.CLK
+SI => inst.DATAIN
+
+

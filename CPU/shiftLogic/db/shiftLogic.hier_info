@@ -1,0 +1,41 @@
+|shiftLogic
+F => process_0~2.IN1
+F => process_0~0.IN1
+FL => process_0~0.IN0
+FL => process_0~2.IN0
+FR => process_0~3.IN1
+FR => process_0~1.IN0
+SL_in[0] => SL_out~14.DATAB
+SL_in[0] => SL_out~7.DATAA
+SL_in[0] => SL_out~0.DATAB
+SL_in[1] => SL_out~13.DATAB
+SL_in[1] => SL_out~7.DATAB
+SL_in[1] => SL_out~6.DATAA
+SL_in[2] => SL_out~12.DATAB
+SL_in[2] => SL_out~6.DATAB
+SL_in[2] => SL_out~5.DATAA
+SL_in[3] => SL_out~11.DATAB
+SL_in[3] => SL_out~5.DATAB
+SL_in[3] => SL_out~4.DATAA
+SL_in[4] => SL_out~10.DATAB
+SL_in[4] => SL_out~4.DATAB
+SL_in[4] => SL_out~3.DATAA
+SL_in[5] => SL_out~9.DATAB
+SL_in[5] => SL_out~3.DATAB
+SL_in[5] => SL_out~2.DATAA
+SL_in[6] => SL_out~8.DATAB
+SL_in[6] => SL_out~2.DATAB
+SL_in[6] => SL_out~1.DATAA
+SL_in[7] => SL_out~15.DATAB
+SL_in[7] => SL_out~1.DATAB
+SL_in[7] => SL_out~0.DATAA
+SL_out[0] <= SL_out~15.DB_MAX_OUTPUT_PORT_TYPE
+SL_out[1] <= SL_out~14.DB_MAX_OUTPUT_PORT_TYPE
+SL_out[2] <= SL_out~13.DB_MAX_OUTPUT_PORT_TYPE
+SL_out[3] <= SL_out~12.DB_MAX_OUTPUT_PORT_TYPE
+SL_out[4] <= SL_out~11.DB_MAX_OUTPUT_PORT_TYPE
+SL_out[5] <= SL_out~10.DB_MAX_OUTPUT_PORT_TYPE
+SL_out[6] <= SL_out~9.DB_MAX_OUTPUT_PORT_TYPE
+SL_out[7] <= SL_out~8.DB_MAX_OUTPUT_PORT_TYPE
+
+

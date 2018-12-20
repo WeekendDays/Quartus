@@ -1,0 +1,12 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY mydecoder3_8_1 IS
+	PORT(a: in STD_LOGIC_VECTOR(2 DOWNTO 0);
+		 d: out STD_LOGIC_VECTOR(7 DOWNTO 0));
+END mydecoder3_8_1;
+
+ARCHITECTURE decoder OF mydecoder3_8_1 IS
+BEGIN
+	;
+END decoder;

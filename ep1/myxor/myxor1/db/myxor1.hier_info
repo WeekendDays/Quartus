@@ -1,0 +1,8 @@
+|myxor1
+a => d~1.IN0
+a => d~0.IN0
+b => d~0.IN1
+b => d~1.IN1
+d <= d~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

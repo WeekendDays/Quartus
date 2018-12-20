@@ -1,0 +1,35 @@
+|register8
+ld => b~7.OUTPUTSELECT
+ld => b~6.OUTPUTSELECT
+ld => b~5.OUTPUTSELECT
+ld => b~4.OUTPUTSELECT
+ld => b~3.OUTPUTSELECT
+ld => b~2.OUTPUTSELECT
+ld => b~1.OUTPUTSELECT
+ld => b~0.OUTPUTSELECT
+clk => b[7].CLK
+clk => b[6].CLK
+clk => b[5].CLK
+clk => b[4].CLK
+clk => b[3].CLK
+clk => b[2].CLK
+clk => b[1].CLK
+clk => b[0].CLK
+a[0] => b~7.DATAB
+a[1] => b~6.DATAB
+a[2] => b~5.DATAB
+a[3] => b~4.DATAB
+a[4] => b~3.DATAB
+a[5] => b~2.DATAB
+a[6] => b~1.DATAB
+a[7] => b~0.DATAB
+c[0] <= b[0].DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= b[1].DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= b[2].DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= b[3].DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= b[4].DB_MAX_OUTPUT_PORT_TYPE
+c[5] <= b[5].DB_MAX_OUTPUT_PORT_TYPE
+c[6] <= b[6].DB_MAX_OUTPUT_PORT_TYPE
+c[7] <= b[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

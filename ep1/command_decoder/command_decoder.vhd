@@ -1,0 +1,106 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY command_decoder IS
+	PORT(a: in STD_LOGIC_VECTOR(7 DOWNTO 0);
+		 e: in STD_LOGIC;
+		 MOVA, MOVB, MOVC, ADD, SUB, AND0, NOT0,
+		 SHR, SHL, JMP, JZ, JC, IN0, OUT0, NOP,
+		 HALT: out STD_LOGIC);
+END command_decoder;
+
+ARCHITECTURE decoder OF command_decoder IS
+SIGNAL R1, R2: STD_LOGIC_VECTOR(1 DOWNTO 0);
+SIGNAL      s: STD_LOGIC_VECTOR(3 DOWNTO 0);
+SIGNAL s1, s2: STD_LOGIC_VECTOR(5 DOWNTO 0);
+SIGNAL     s3: STD_LOGIC_VECTOR(7 DOWNTO 0);
+
+BEGIN
+	PROCESS(a, e)
+	BEGIN
+		IF (e = '1') THEN
+			R1 <= a(3) & a(2);
+			R2 <= a(1) & a(0);
+			s <= a(7) & a(6) & a(5) & a(4);
+			s1 <= s & R1;
+			s2 <= s & R2;
+			s3 <= s & R1 & R2;
+		ELSE
+			R1 <= "00";
+			R2 <= "00";
+			s <= "0000";
+			s1 <= "000000";
+			s2 <= "000000";
+			s3 <= "00111100";
+		END IF;
+	END PROCESS;
+WITH s3 SELECT
+	MOVA <= '1' WHEN "00110000",
+			'1' WHEN "00110001",
+			'1' WHEN "00110010",
+			'1' WHEN "00110100",
+			'1' WHEN "00110101",
+			'1' WHEN "00110110",
+			'1' WHEN "00111000",
+			'1' WHEN "00111001",
+			'1' WHEN "00111010",
+			'0' WHEN OTHERS;
+
+WITH s1 SELECT
+	MOVB <= '1' WHEN "001111",
+			'0' WHEN OTHERS;
+
+WITH s2 SELECT
+	MOVC <= '1' WHEN "001111",
+			'0' WHEN OTHERS;
+
+WITH s SELECT
+	ADD <= '1' WHEN "1001",
+	       '0' WHEN OTHERS;
+
+WITH s SELECT
+	SUB <= '1' WHEN "0110",
+		   '0' WHEN OTHERS;
+
+WITH s SELECT
+	AND0 <= '1' WHEN "1110",
+		    '0' WHEN OTHERS;
+
+WITH s SELECT
+	NOT0 <= '1' WHEN "0101",
+		    '0' WHEN OTHERS;
+
+WITH s2 SELECT
+	SHR <= '1' WHEN "101000",
+		   '0' WHEN OTHERS;
+
+WITH s2 SELECT
+	SHL <= '1' WHEN "101011",
+		   '0' WHEN OTHERS;
+
+WITH s3 SELECT
+	JMP <= '1' WHEN "00010000",
+		   '0' WHEN OTHERS;
+
+WITH s3 SELECT
+	JZ <= '1' WHEN "00010001",
+	      '0' WHEN OTHERS;
+	
+WITH s3 SELECT
+	JC <= '1' WHEN "00010010",
+	      '0' WHEN OTHERS;
+	
+WITH s SELECT
+	IN0 <= '1' WHEN "0010",
+		   '0' WHEN OTHERS;
+WITH s SELECT
+	OUT0 <= '1' WHEN "0100",
+		    '0' WHEN OTHERS;
+WITH s3 SELECT
+	NOP <= '1' WHEN "01110000",
+		   '0' WHEN OTHERS;
+WITH s3 SELECT
+	HALT <= '1' WHEN "10000000",
+		    '0' WHEN OTHERS;
+
+END decoder;

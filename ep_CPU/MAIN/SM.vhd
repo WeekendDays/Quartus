@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity SM is
+port
+(
+	CLK: in std_logic;
+	SM_out:out std_logic
+);
+end SM;
+architecture fcn of SM is
+begin
+	process(CLK)
+	variable en:  std_logic:='0';
+	begin 
+	if ( CLk'event and CLK='0') then 
+		en:= not en;
+	end if;
+	SM_out <=en;
+	end process;
+end fcn;

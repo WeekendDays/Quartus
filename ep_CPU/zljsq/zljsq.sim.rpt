@@ -1,0 +1,228 @@
+Simulator report for zljsq
+Tue Jan 02 17:11:15 2018
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 58 nodes     ;
+; Simulation Coverage         ;      75.86 % ;
+; Total Number of Transitions ; 1467         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; zljsq.vwf  ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      75.86 % ;
+; Total nodes checked                                 ; 58           ;
+; Total output ports checked                          ; 58           ;
+; Total output ports with complete 1/0-value coverage ; 44           ;
+; Total output ports with no 1/0-value coverage       ; 9            ;
+; Total output ports with no 1-value coverage         ; 9            ;
+; Total output ports with no 0-value coverage         ; 14           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |zljsq|address[0]  ; |zljsq|address[0]  ; regout           ;
+; |zljsq|process_0~0 ; |zljsq|process_0~0 ; out0             ;
+; |zljsq|address~1   ; |zljsq|address~1   ; out0             ;
+; |zljsq|C~1         ; |zljsq|C~1         ; out0             ;
+; |zljsq|address~2   ; |zljsq|address~2   ; out0             ;
+; |zljsq|C~2         ; |zljsq|C~2         ; out0             ;
+; |zljsq|address~3   ; |zljsq|address~3   ; out0             ;
+; |zljsq|C~3         ; |zljsq|C~3         ; out0             ;
+; |zljsq|address~4   ; |zljsq|address~4   ; out0             ;
+; |zljsq|C~4         ; |zljsq|C~4         ; out0             ;
+; |zljsq|address~5   ; |zljsq|address~5   ; out0             ;
+; |zljsq|C~5         ; |zljsq|C~5         ; out0             ;
+; |zljsq|process_0~1 ; |zljsq|process_0~1 ; out0             ;
+; |zljsq|address~10  ; |zljsq|address~10  ; out              ;
+; |zljsq|address~11  ; |zljsq|address~11  ; out              ;
+; |zljsq|address~12  ; |zljsq|address~12  ; out              ;
+; |zljsq|address~13  ; |zljsq|address~13  ; out              ;
+; |zljsq|address~14  ; |zljsq|address~14  ; out              ;
+; |zljsq|address~15  ; |zljsq|address~15  ; out              ;
+; |zljsq|address~18  ; |zljsq|address~18  ; out              ;
+; |zljsq|address~19  ; |zljsq|address~19  ; out              ;
+; |zljsq|address~20  ; |zljsq|address~20  ; out              ;
+; |zljsq|address~21  ; |zljsq|address~21  ; out              ;
+; |zljsq|address~22  ; |zljsq|address~22  ; out              ;
+; |zljsq|address~23  ; |zljsq|address~23  ; out              ;
+; |zljsq|address[1]  ; |zljsq|address[1]  ; regout           ;
+; |zljsq|address[2]  ; |zljsq|address[2]  ; regout           ;
+; |zljsq|address[3]  ; |zljsq|address[3]  ; regout           ;
+; |zljsq|address[4]  ; |zljsq|address[4]  ; regout           ;
+; |zljsq|address[5]  ; |zljsq|address[5]  ; regout           ;
+; |zljsq|BUSS[0]     ; |zljsq|BUSS[0]     ; out              ;
+; |zljsq|BUSS[1]     ; |zljsq|BUSS[1]     ; out              ;
+; |zljsq|BUSS[2]     ; |zljsq|BUSS[2]     ; out              ;
+; |zljsq|BUSS[3]     ; |zljsq|BUSS[3]     ; out              ;
+; |zljsq|BUSS[4]     ; |zljsq|BUSS[4]     ; out              ;
+; |zljsq|LDPC        ; |zljsq|LDPC        ; out              ;
+; |zljsq|INPC        ; |zljsq|INPC        ; out              ;
+; |zljsq|CLK         ; |zljsq|CLK         ; out              ;
+; |zljsq|output[0]   ; |zljsq|output[0]   ; pin_out          ;
+; |zljsq|output[1]   ; |zljsq|output[1]   ; pin_out          ;
+; |zljsq|output[2]   ; |zljsq|output[2]   ; pin_out          ;
+; |zljsq|output[3]   ; |zljsq|output[3]   ; pin_out          ;
+; |zljsq|output[4]   ; |zljsq|output[4]   ; pin_out          ;
+; |zljsq|output[5]   ; |zljsq|output[5]   ; pin_out          ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------+
+; Missing 1-Value Coverage                                 ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |zljsq|C~6        ; |zljsq|C~6        ; out0             ;
+; |zljsq|address~7  ; |zljsq|address~7  ; out0             ;
+; |zljsq|address~8  ; |zljsq|address~8  ; out              ;
+; |zljsq|address~16 ; |zljsq|address~16 ; out              ;
+; |zljsq|address[7] ; |zljsq|address[7] ; regout           ;
+; |zljsq|BUSS[5]    ; |zljsq|BUSS[5]    ; out              ;
+; |zljsq|BUSS[6]    ; |zljsq|BUSS[6]    ; out              ;
+; |zljsq|BUSS[7]    ; |zljsq|BUSS[7]    ; out              ;
+; |zljsq|output[7]  ; |zljsq|output[7]  ; pin_out          ;
++-------------------+-------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------+
+; Missing 0-Value Coverage                                 ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |zljsq|address~6  ; |zljsq|address~6  ; out0             ;
+; |zljsq|C~6        ; |zljsq|C~6        ; out0             ;
+; |zljsq|address~7  ; |zljsq|address~7  ; out0             ;
+; |zljsq|address~8  ; |zljsq|address~8  ; out              ;
+; |zljsq|address~9  ; |zljsq|address~9  ; out              ;
+; |zljsq|address~16 ; |zljsq|address~16 ; out              ;
+; |zljsq|address~17 ; |zljsq|address~17 ; out              ;
+; |zljsq|address[6] ; |zljsq|address[6] ; regout           ;
+; |zljsq|address[7] ; |zljsq|address[7] ; regout           ;
+; |zljsq|BUSS[5]    ; |zljsq|BUSS[5]    ; out              ;
+; |zljsq|BUSS[6]    ; |zljsq|BUSS[6]    ; out              ;
+; |zljsq|BUSS[7]    ; |zljsq|BUSS[7]    ; out              ;
+; |zljsq|output[6]  ; |zljsq|output[6]  ; pin_out          ;
+; |zljsq|output[7]  ; |zljsq|output[7]  ; pin_out          ;
++-------------------+-------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Jan 02 17:11:15 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off zljsq -c zljsq
+Info: Using vector source file "D:/EX_CPU/zljsq/zljsq.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      75.86 %
+Info: Number of transitions in simulation is 1467
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 208 megabytes
+    Info: Processing ended: Tue Jan 02 17:11:15 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

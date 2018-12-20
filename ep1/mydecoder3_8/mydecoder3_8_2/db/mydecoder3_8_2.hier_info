@@ -1,0 +1,30 @@
+|mydecoder3_8_2
+d[0] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+d[1] <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+d[2] <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+d[3] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+d[4] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+d[5] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+d[6] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+d[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+a[0] => inst2.IN0
+a[0] => inst8.IN1
+a[0] => inst10.IN1
+a[1] => inst.IN0
+a[1] => inst9.IN0
+a[1] => inst10.IN0
+a[2] => inst3.IN0
+a[2] => inst15.IN1
+a[2] => inst16.IN1
+a[2] => inst17.IN1
+a[2] => inst18.IN1
+e => inst11.IN2
+e => inst12.IN2
+e => inst13.IN2
+e => inst14.IN2
+e => inst15.IN2
+e => inst16.IN2
+e => inst17.IN2
+e => inst18.IN2
+
+

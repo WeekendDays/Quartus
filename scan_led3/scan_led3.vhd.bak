@@ -1,0 +1,30 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY scan_led IS
+	port(cin: in STD_LOGIC_VECTOR(3 DOWNTO 0);
+		cout: out STD_LOGIC_VECTOR(6 DOWNTO 0)
+		);
+END scan_led;
+
+ARCHITECTURE show OF scan_led IS
+BEGIN
+	cout <= "1111110" WHEN cin = "0000" ELSE
+			"0110000" WHEN cin = "0001" ELSE
+			"1101101" WHEN cin = "0010" ELSE
+			"1111001" WHEN cin = "0011" ELSE
+			"0110011" WHEN cin = "0100" ELSE
+			"1011011" WHEN cin = "0101" ELSE
+			"1011111" WHEN cin = "0110" ELSE
+			"1110000" WHEN cin = "0111" ELSE
+			"1111111" WHEN cin = "1000" ELSE
+			"1111011" WHEN cin = "1001" ELSE
+			"1110111" WHEN cin = "1010" ELSE
+			"0011111" WHEN cin = "1011" ELSE
+			"1001110" WHEN cin = "1100" ELSE
+			"0111101" WHEN cin = "1101" ELSE
+			"1001111" WHEN cin = "1110" ELSE
+			"1000111";
+END show;
+
+

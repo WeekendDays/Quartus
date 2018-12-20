@@ -1,0 +1,58 @@
+|sradd
+clk => SC.IN1
+reset => Dff1:g3.reset
+reset => srg4:g1.reset
+reset => srg4:g0.reset
+SI => srg4:g0.SI
+shift => SC.IN0
+SO <= srg4:g1.SO
+S2 <= srg4:g0.SO
+
+
+|sradd|srg4:g0
+clk => shift[3].CLK
+clk => shift[2].CLK
+clk => shift[1].CLK
+clk => shift[0].CLK
+reset => shift[3].ACLR
+reset => shift[2].ACLR
+reset => shift[1].ACLR
+reset => shift[0].ACLR
+SI => shift[3].DATAIN
+SO <= shift[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sradd|srg4:g1
+clk => shift[3].CLK
+clk => shift[2].CLK
+clk => shift[1].CLK
+clk => shift[0].CLK
+reset => shift[3].ACLR
+reset => shift[2].ACLR
+reset => shift[1].ACLR
+reset => shift[0].ACLR
+SI => shift[3].DATAIN
+SO <= shift[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sradd|fulladd:g2
+x => c~1.IN0
+x => c~0.IN0
+x => s~0.IN0
+y => c~3.IN0
+y => c~0.IN1
+y => s~0.IN1
+z => c~3.IN1
+z => c~1.IN1
+z => s~1.IN1
+s <= s~1.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sradd|Dff1:g3
+clk => q~reg0.CLK
+reset => q~reg0.ACLR
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

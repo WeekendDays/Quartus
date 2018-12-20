@@ -1,0 +1,6 @@
+|ep2_1_2
+A => Out1~0.DATAIN
+EN => Out1~0.OE
+Out1 <= Out1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

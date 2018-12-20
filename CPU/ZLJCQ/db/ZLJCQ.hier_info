@@ -1,0 +1,35 @@
+|ZLJCQ
+LDIR => jcq[0].ENA
+LDIR => jcq[1].ENA
+LDIR => jcq[2].ENA
+LDIR => jcq[3].ENA
+LDIR => jcq[4].ENA
+LDIR => jcq[5].ENA
+LDIR => jcq[6].ENA
+LDIR => jcq[7].ENA
+CLK => jcq[7].CLK
+CLK => jcq[6].CLK
+CLK => jcq[5].CLK
+CLK => jcq[4].CLK
+CLK => jcq[3].CLK
+CLK => jcq[2].CLK
+CLK => jcq[1].CLK
+CLK => jcq[0].CLK
+ZL_in[0] => jcq[0].DATAIN
+ZL_in[1] => jcq[1].DATAIN
+ZL_in[2] => jcq[2].DATAIN
+ZL_in[3] => jcq[3].DATAIN
+ZL_in[4] => jcq[4].DATAIN
+ZL_in[5] => jcq[5].DATAIN
+ZL_in[6] => jcq[6].DATAIN
+ZL_in[7] => jcq[7].DATAIN
+ZL_out1[0] <= jcq[4].DB_MAX_OUTPUT_PORT_TYPE
+ZL_out1[1] <= jcq[5].DB_MAX_OUTPUT_PORT_TYPE
+ZL_out1[2] <= jcq[6].DB_MAX_OUTPUT_PORT_TYPE
+ZL_out1[3] <= jcq[7].DB_MAX_OUTPUT_PORT_TYPE
+ZL_out2[0] <= jcq[0].DB_MAX_OUTPUT_PORT_TYPE
+ZL_out2[1] <= jcq[1].DB_MAX_OUTPUT_PORT_TYPE
+ZL_out2[2] <= jcq[2].DB_MAX_OUTPUT_PORT_TYPE
+ZL_out2[3] <= jcq[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,42 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+7
+3344
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+mydecoder3_8_2
+# storage
+db|mydecoder3_8_2.(0).cnf
+db|mydecoder3_8_2.(0).cnf
+# case_insensitive
+# source_file
+mydecoder3_8_2.bdf
+c59c8545d167a72cdc1cd92d35349a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

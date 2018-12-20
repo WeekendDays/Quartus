@@ -1,0 +1,32 @@
+|PC
+LDPC => process_0~1.IN1
+LDPC => process_0~0.IN1
+INPC => process_0~0.IN0
+INPC => process_0~1.IN0
+CLK => C.CLK
+CLK => address[7].CLK
+CLK => address[6].CLK
+CLK => address[5].CLK
+CLK => address[4].CLK
+CLK => address[3].CLK
+CLK => address[2].CLK
+CLK => address[1].CLK
+CLK => address[0].CLK
+PC_in[0] => address~15.DATAB
+PC_in[1] => address~14.DATAB
+PC_in[2] => address~13.DATAB
+PC_in[3] => address~12.DATAB
+PC_in[4] => address~11.DATAB
+PC_in[5] => address~10.DATAB
+PC_in[6] => address~9.DATAB
+PC_in[7] => address~8.DATAB
+PC_out[0] <= address[0].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[1] <= address[1].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[2] <= address[2].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[3] <= address[3].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[4] <= address[4].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[5] <= address[5].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[6] <= address[6].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[7] <= address[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

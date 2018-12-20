@@ -1,0 +1,49 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity sradd is
+	port(
+		clk, reset, SI, shift: in std_logic;
+		               SO, S2: out std_logic
+	);
+end sradd;
+
+architecture main of sradd is
+component fulladd
+	port(
+		X, Y, Z:in std_logic;
+		S, C:out std_logic
+	);
+end component;
+component srg4
+	port(
+		clk, reset, SI:in std_logic;
+		SO:out std_logic
+	);
+	
+	
+end component;
+component Dff1
+	port(
+		clk, reset, d:in std_logic;
+		            q:out std_logic
+	);
+	
+end component;
+signal X, Y, S, C, Z : std_logic;
+begin
+	SC <= clk or (not shift);
+	g0 : srg4
+	port map (SC, reset, SI, Y);
+	g1 : srg4
+	port map (SC, reset, S, X);
+	g2 : fulladd
+	port map (X, Y, Z, S, C);
+	g3 : Dff1
+	port map (SC, reset, C, Z);
+
+	SO <= X;
+	S2 <= Y;
+end main;
+
+

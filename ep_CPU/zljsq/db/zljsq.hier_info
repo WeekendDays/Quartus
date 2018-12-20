@@ -1,0 +1,32 @@
+|zljsq
+BUSS[0] => address~15.DATAB
+BUSS[1] => address~14.DATAB
+BUSS[2] => address~13.DATAB
+BUSS[3] => address~12.DATAB
+BUSS[4] => address~11.DATAB
+BUSS[5] => address~10.DATAB
+BUSS[6] => address~9.DATAB
+BUSS[7] => address~8.DATAB
+LDPC => process_0~1.IN1
+LDPC => process_0~0.IN1
+INPC => process_0~0.IN0
+INPC => process_0~1.IN0
+CLK => C.CLK
+CLK => address[7].CLK
+CLK => address[6].CLK
+CLK => address[5].CLK
+CLK => address[4].CLK
+CLK => address[3].CLK
+CLK => address[2].CLK
+CLK => address[1].CLK
+CLK => address[0].CLK
+output[0] <= address[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= address[1].DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= address[2].DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= address[3].DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= address[4].DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= address[5].DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= address[6].DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= address[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

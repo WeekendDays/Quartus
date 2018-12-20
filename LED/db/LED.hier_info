@@ -1,0 +1,10 @@
+|LED
+x <= led2:inst1.x7
+a => led2:inst1.a7
+
+
+|LED|led2:inst1
+a7 => x7.DATAIN
+x7 <= a7.DB_MAX_OUTPUT_PORT_TYPE
+
+

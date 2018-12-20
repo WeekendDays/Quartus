@@ -1,0 +1,8 @@
+|ep2_2_2
+B <= B~0.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst1.DATAIN
+EN => inst2.IN0
+EN => inst.OE
+A1 => inst.DATAIN
+
+

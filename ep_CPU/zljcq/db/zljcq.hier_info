@@ -1,0 +1,35 @@
+|zljcq
+BUSS[0] => jcq[0].DATAIN
+BUSS[1] => jcq[1].DATAIN
+BUSS[2] => jcq[2].DATAIN
+BUSS[3] => jcq[3].DATAIN
+BUSS[4] => jcq[4].DATAIN
+BUSS[5] => jcq[5].DATAIN
+BUSS[6] => jcq[6].DATAIN
+BUSS[7] => jcq[7].DATAIN
+LDIR => jcq[0].ENA
+LDIR => jcq[1].ENA
+LDIR => jcq[2].ENA
+LDIR => jcq[3].ENA
+LDIR => jcq[4].ENA
+LDIR => jcq[5].ENA
+LDIR => jcq[6].ENA
+LDIR => jcq[7].ENA
+clk => jcq[7].CLK
+clk => jcq[6].CLK
+clk => jcq[5].CLK
+clk => jcq[4].CLK
+clk => jcq[3].CLK
+clk => jcq[2].CLK
+clk => jcq[1].CLK
+clk => jcq[0].CLK
+out1[0] <= jcq[4].DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= jcq[5].DB_MAX_OUTPUT_PORT_TYPE
+out1[2] <= jcq[6].DB_MAX_OUTPUT_PORT_TYPE
+out1[3] <= jcq[7].DB_MAX_OUTPUT_PORT_TYPE
+out2[0] <= jcq[0].DB_MAX_OUTPUT_PORT_TYPE
+out2[1] <= jcq[1].DB_MAX_OUTPUT_PORT_TYPE
+out2[2] <= jcq[2].DB_MAX_OUTPUT_PORT_TYPE
+out2[3] <= jcq[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

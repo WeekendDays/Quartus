@@ -1,0 +1,381 @@
+Simulator report for ep3_3
+Sat Dec 01 21:28:09 2018
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 163 nodes    ;
+; Simulation Coverage         ;      49.69 % ;
+; Total Number of Transitions ; 260          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      49.69 % ;
+; Total nodes checked                                 ; 163          ;
+; Total output ports checked                          ; 163          ;
+; Total output ports with complete 1/0-value coverage ; 81           ;
+; Total output ports with no 1/0-value coverage       ; 58           ;
+; Total output ports with no 1-value coverage         ; 82           ;
+; Total output ports with no 0-value coverage         ; 58           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |ep3_3|process_0~0 ; |ep3_3|process_0~0 ; out0             ;
+; |ep3_3|cout~8      ; |ep3_3|cout~8      ; out              ;
+; |ep3_3|cout~9      ; |ep3_3|cout~9      ; out              ;
+; |ep3_3|cout~10     ; |ep3_3|cout~10     ; out              ;
+; |ep3_3|cout~11     ; |ep3_3|cout~11     ; out              ;
+; |ep3_3|cout~13     ; |ep3_3|cout~13     ; out              ;
+; |ep3_3|cout~14     ; |ep3_3|cout~14     ; out              ;
+; |ep3_3|cout~15     ; |ep3_3|cout~15     ; out              ;
+; |ep3_3|cout~16     ; |ep3_3|cout~16     ; out              ;
+; |ep3_3|cout~17     ; |ep3_3|cout~17     ; out              ;
+; |ep3_3|cout~18     ; |ep3_3|cout~18     ; out              ;
+; |ep3_3|cout~19     ; |ep3_3|cout~19     ; out              ;
+; |ep3_3|cout~21     ; |ep3_3|cout~21     ; out              ;
+; |ep3_3|cout~22     ; |ep3_3|cout~22     ; out              ;
+; |ep3_3|cout~23     ; |ep3_3|cout~23     ; out              ;
+; |ep3_3|cout~24     ; |ep3_3|cout~24     ; out              ;
+; |ep3_3|cout~25     ; |ep3_3|cout~25     ; out              ;
+; |ep3_3|cout~26     ; |ep3_3|cout~26     ; out              ;
+; |ep3_3|cout~27     ; |ep3_3|cout~27     ; out              ;
+; |ep3_3|cout~29     ; |ep3_3|cout~29     ; out              ;
+; |ep3_3|cout~30     ; |ep3_3|cout~30     ; out              ;
+; |ep3_3|cout~31     ; |ep3_3|cout~31     ; out              ;
+; |ep3_3|cout~32     ; |ep3_3|cout~32     ; out              ;
+; |ep3_3|cout~33     ; |ep3_3|cout~33     ; out              ;
+; |ep3_3|cout~34     ; |ep3_3|cout~34     ; out              ;
+; |ep3_3|cout~35     ; |ep3_3|cout~35     ; out              ;
+; |ep3_3|cout~37     ; |ep3_3|cout~37     ; out              ;
+; |ep3_3|cout~38     ; |ep3_3|cout~38     ; out              ;
+; |ep3_3|cout~39     ; |ep3_3|cout~39     ; out              ;
+; |ep3_3|cout~40     ; |ep3_3|cout~40     ; out              ;
+; |ep3_3|cout~41     ; |ep3_3|cout~41     ; out              ;
+; |ep3_3|cout~42     ; |ep3_3|cout~42     ; out              ;
+; |ep3_3|cout~43     ; |ep3_3|cout~43     ; out              ;
+; |ep3_3|cout~45     ; |ep3_3|cout~45     ; out              ;
+; |ep3_3|cout~46     ; |ep3_3|cout~46     ; out              ;
+; |ep3_3|cout~47     ; |ep3_3|cout~47     ; out              ;
+; |ep3_3|cout~48     ; |ep3_3|cout~48     ; out              ;
+; |ep3_3|cout~49     ; |ep3_3|cout~49     ; out              ;
+; |ep3_3|cout~50     ; |ep3_3|cout~50     ; out              ;
+; |ep3_3|cout~51     ; |ep3_3|cout~51     ; out              ;
+; |ep3_3|cout~52     ; |ep3_3|cout~52     ; out              ;
+; |ep3_3|cout~53     ; |ep3_3|cout~53     ; out              ;
+; |ep3_3|cout~54     ; |ep3_3|cout~54     ; out              ;
+; |ep3_3|cout~55     ; |ep3_3|cout~55     ; out              ;
+; |ep3_3|X[0]        ; |ep3_3|X[0]        ; out              ;
+; |ep3_3|X[3]        ; |ep3_3|X[3]        ; out              ;
+; |ep3_3|X[4]        ; |ep3_3|X[4]        ; out              ;
+; |ep3_3|X[5]        ; |ep3_3|X[5]        ; out              ;
+; |ep3_3|Y[6]        ; |ep3_3|Y[6]        ; out              ;
+; |ep3_3|Y[7]        ; |ep3_3|Y[7]        ; out              ;
+; |ep3_3|S[0]        ; |ep3_3|S[0]        ; out              ;
+; |ep3_3|S[1]        ; |ep3_3|S[1]        ; out              ;
+; |ep3_3|S[4]        ; |ep3_3|S[4]        ; out              ;
+; |ep3_3|cout[0]     ; |ep3_3|cout[0]     ; pin_out          ;
+; |ep3_3|cout[1]     ; |ep3_3|cout[1]     ; pin_out          ;
+; |ep3_3|cout[2]     ; |ep3_3|cout[2]     ; pin_out          ;
+; |ep3_3|cout[3]     ; |ep3_3|cout[3]     ; pin_out          ;
+; |ep3_3|cout[4]     ; |ep3_3|cout[4]     ; pin_out          ;
+; |ep3_3|cout[5]     ; |ep3_3|cout[5]     ; pin_out          ;
+; |ep3_3|cout[6]     ; |ep3_3|cout[6]     ; pin_out          ;
+; |ep3_3|cout[7]     ; |ep3_3|cout[7]     ; pin_out          ;
+; |ep3_3|Add0~0      ; |ep3_3|Add0~0      ; out0             ;
+; |ep3_3|Add0~12     ; |ep3_3|Add0~12     ; out0             ;
+; |ep3_3|Add0~17     ; |ep3_3|Add0~17     ; out0             ;
+; |ep3_3|Add0~22     ; |ep3_3|Add0~22     ; out0             ;
+; |ep3_3|Add1~0      ; |ep3_3|Add1~0      ; out0             ;
+; |ep3_3|Add1~2      ; |ep3_3|Add1~2      ; out0             ;
+; |ep3_3|Add1~13     ; |ep3_3|Add1~13     ; out0             ;
+; |ep3_3|Add1~15     ; |ep3_3|Add1~15     ; out0             ;
+; |ep3_3|Add1~16     ; |ep3_3|Add1~16     ; out0             ;
+; |ep3_3|Add1~18     ; |ep3_3|Add1~18     ; out0             ;
+; |ep3_3|Add1~20     ; |ep3_3|Add1~20     ; out0             ;
+; |ep3_3|Add1~21     ; |ep3_3|Add1~21     ; out0             ;
+; |ep3_3|Add1~23     ; |ep3_3|Add1~23     ; out0             ;
+; |ep3_3|Add1~25     ; |ep3_3|Add1~25     ; out0             ;
+; |ep3_3|Add1~26     ; |ep3_3|Add1~26     ; out0             ;
+; |ep3_3|Add1~29     ; |ep3_3|Add1~29     ; out0             ;
+; |ep3_3|Add1~32     ; |ep3_3|Add1~32     ; out0             ;
+; |ep3_3|Add1~33     ; |ep3_3|Add1~33     ; out0             ;
+; |ep3_3|Equal0~0    ; |ep3_3|Equal0~0    ; out0             ;
+; |ep3_3|Equal6~0    ; |ep3_3|Equal6~0    ; out0             ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------+
+; Missing 1-Value Coverage                              ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |ep3_3|cout~0   ; |ep3_3|cout~0    ; out0             ;
+; |ep3_3|cout~1   ; |ep3_3|cout~1    ; out0             ;
+; |ep3_3|cout~2   ; |ep3_3|cout~2    ; out0             ;
+; |ep3_3|cout~3   ; |ep3_3|cout~3    ; out0             ;
+; |ep3_3|cout~4   ; |ep3_3|cout~4    ; out0             ;
+; |ep3_3|cout~5   ; |ep3_3|cout~5    ; out0             ;
+; |ep3_3|cout~6   ; |ep3_3|cout~6    ; out0             ;
+; |ep3_3|cout~7   ; |ep3_3|cout~7    ; out0             ;
+; |ep3_3|cout~12  ; |ep3_3|cout~12   ; out              ;
+; |ep3_3|cout~20  ; |ep3_3|cout~20   ; out              ;
+; |ep3_3|cout~28  ; |ep3_3|cout~28   ; out              ;
+; |ep3_3|cout~36  ; |ep3_3|cout~36   ; out              ;
+; |ep3_3|cout~44  ; |ep3_3|cout~44   ; out              ;
+; |ep3_3|X[1]     ; |ep3_3|X[1]      ; out              ;
+; |ep3_3|X[2]     ; |ep3_3|X[2]      ; out              ;
+; |ep3_3|X[6]     ; |ep3_3|X[6]      ; out              ;
+; |ep3_3|X[7]     ; |ep3_3|X[7]      ; out              ;
+; |ep3_3|Y[0]     ; |ep3_3|Y[0]      ; out              ;
+; |ep3_3|Y[1]     ; |ep3_3|Y[1]      ; out              ;
+; |ep3_3|Y[2]     ; |ep3_3|Y[2]      ; out              ;
+; |ep3_3|Y[3]     ; |ep3_3|Y[3]      ; out              ;
+; |ep3_3|Y[4]     ; |ep3_3|Y[4]      ; out              ;
+; |ep3_3|Y[5]     ; |ep3_3|Y[5]      ; out              ;
+; |ep3_3|S[2]     ; |ep3_3|S[2]      ; out              ;
+; |ep3_3|S[3]     ; |ep3_3|S[3]      ; out              ;
+; |ep3_3|S[5]     ; |ep3_3|S[5]      ; out              ;
+; |ep3_3|S[6]     ; |ep3_3|S[6]      ; out              ;
+; |ep3_3|S[7]     ; |ep3_3|S[7]      ; out              ;
+; |ep3_3|Add0~1   ; |ep3_3|Add0~1    ; out0             ;
+; |ep3_3|Add0~2   ; |ep3_3|Add0~2    ; out0             ;
+; |ep3_3|Add0~3   ; |ep3_3|Add0~3    ; out0             ;
+; |ep3_3|Add0~4   ; |ep3_3|Add0~4    ; out0             ;
+; |ep3_3|Add0~5   ; |ep3_3|Add0~5    ; out0             ;
+; |ep3_3|Add0~6   ; |ep3_3|Add0~6    ; out0             ;
+; |ep3_3|Add0~7   ; |ep3_3|Add0~7    ; out0             ;
+; |ep3_3|Add0~8   ; |ep3_3|Add0~8    ; out0             ;
+; |ep3_3|Add0~9   ; |ep3_3|Add0~9    ; out0             ;
+; |ep3_3|Add0~10  ; |ep3_3|Add0~10   ; out0             ;
+; |ep3_3|Add0~11  ; |ep3_3|Add0~11   ; out0             ;
+; |ep3_3|Add0~13  ; |ep3_3|Add0~13   ; out0             ;
+; |ep3_3|Add0~14  ; |ep3_3|Add0~14   ; out0             ;
+; |ep3_3|Add0~15  ; |ep3_3|Add0~15   ; out0             ;
+; |ep3_3|Add0~16  ; |ep3_3|Add0~16   ; out0             ;
+; |ep3_3|Add0~18  ; |ep3_3|Add0~18   ; out0             ;
+; |ep3_3|Add0~19  ; |ep3_3|Add0~19   ; out0             ;
+; |ep3_3|Add0~20  ; |ep3_3|Add0~20   ; out0             ;
+; |ep3_3|Add0~21  ; |ep3_3|Add0~21   ; out0             ;
+; |ep3_3|Add0~23  ; |ep3_3|Add0~23   ; out0             ;
+; |ep3_3|Add0~24  ; |ep3_3|Add0~24   ; out0             ;
+; |ep3_3|Add0~25  ; |ep3_3|Add0~25   ; out0             ;
+; |ep3_3|Add0~26  ; |ep3_3|Add0~26   ; out0             ;
+; |ep3_3|Add0~27  ; |ep3_3|Add0~27   ; out0             ;
+; |ep3_3|Add0~28  ; |ep3_3|Add0~28   ; out0             ;
+; |ep3_3|Add0~29  ; |ep3_3|Add0~29   ; out0             ;
+; |ep3_3|Add0~30  ; |ep3_3|Add0~30   ; out0             ;
+; |ep3_3|Add0~31  ; |ep3_3|Add0~31   ; out0             ;
+; |ep3_3|Add0~32  ; |ep3_3|Add0~32   ; out0             ;
+; |ep3_3|Add1~1   ; |ep3_3|Add1~1    ; out0             ;
+; |ep3_3|Add1~3   ; |ep3_3|Add1~3    ; out0             ;
+; |ep3_3|Add1~4   ; |ep3_3|Add1~4    ; out0             ;
+; |ep3_3|Add1~5   ; |ep3_3|Add1~5    ; out0             ;
+; |ep3_3|Add1~6   ; |ep3_3|Add1~6    ; out0             ;
+; |ep3_3|Add1~7   ; |ep3_3|Add1~7    ; out0             ;
+; |ep3_3|Add1~8   ; |ep3_3|Add1~8    ; out0             ;
+; |ep3_3|Add1~9   ; |ep3_3|Add1~9    ; out0             ;
+; |ep3_3|Add1~10  ; |ep3_3|Add1~10   ; out0             ;
+; |ep3_3|Add1~11  ; |ep3_3|Add1~11   ; out0             ;
+; |ep3_3|Add1~12  ; |ep3_3|Add1~12   ; out0             ;
+; |ep3_3|Add1~14  ; |ep3_3|Add1~14   ; out0             ;
+; |ep3_3|Add1~17  ; |ep3_3|Add1~17   ; out0             ;
+; |ep3_3|Add1~19  ; |ep3_3|Add1~19   ; out0             ;
+; |ep3_3|Add1~22  ; |ep3_3|Add1~22   ; out0             ;
+; |ep3_3|Add1~24  ; |ep3_3|Add1~24   ; out0             ;
+; |ep3_3|Add1~27  ; |ep3_3|Add1~27   ; out0             ;
+; |ep3_3|Add1~28  ; |ep3_3|Add1~28   ; out0             ;
+; |ep3_3|Add1~30  ; |ep3_3|Add1~30   ; out0             ;
+; |ep3_3|Add1~31  ; |ep3_3|Add1~31   ; out0             ;
+; |ep3_3|Equal1~0 ; |ep3_3|Equal1~0  ; out0             ;
+; |ep3_3|Equal2~0 ; |ep3_3|Equal2~0  ; out0             ;
+; |ep3_3|Equal3~0 ; |ep3_3|Equal3~0  ; out0             ;
+; |ep3_3|Equal4~0 ; |ep3_3|Equal4~0  ; out0             ;
+; |ep3_3|Equal5~0 ; |ep3_3|Equal5~0  ; out0             ;
++-----------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------+
+; Missing 0-Value Coverage                              ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |ep3_3|cout~0   ; |ep3_3|cout~0    ; out0             ;
+; |ep3_3|cout~1   ; |ep3_3|cout~1    ; out0             ;
+; |ep3_3|cout~2   ; |ep3_3|cout~2    ; out0             ;
+; |ep3_3|cout~3   ; |ep3_3|cout~3    ; out0             ;
+; |ep3_3|cout~4   ; |ep3_3|cout~4    ; out0             ;
+; |ep3_3|cout~5   ; |ep3_3|cout~5    ; out0             ;
+; |ep3_3|cout~6   ; |ep3_3|cout~6    ; out0             ;
+; |ep3_3|cout~7   ; |ep3_3|cout~7    ; out0             ;
+; |ep3_3|cout~12  ; |ep3_3|cout~12   ; out              ;
+; |ep3_3|Y[0]     ; |ep3_3|Y[0]      ; out              ;
+; |ep3_3|Y[1]     ; |ep3_3|Y[1]      ; out              ;
+; |ep3_3|Y[2]     ; |ep3_3|Y[2]      ; out              ;
+; |ep3_3|Y[3]     ; |ep3_3|Y[3]      ; out              ;
+; |ep3_3|Y[4]     ; |ep3_3|Y[4]      ; out              ;
+; |ep3_3|Y[5]     ; |ep3_3|Y[5]      ; out              ;
+; |ep3_3|S[2]     ; |ep3_3|S[2]      ; out              ;
+; |ep3_3|S[3]     ; |ep3_3|S[3]      ; out              ;
+; |ep3_3|S[6]     ; |ep3_3|S[6]      ; out              ;
+; |ep3_3|Add0~1   ; |ep3_3|Add0~1    ; out0             ;
+; |ep3_3|Add0~3   ; |ep3_3|Add0~3    ; out0             ;
+; |ep3_3|Add0~4   ; |ep3_3|Add0~4    ; out0             ;
+; |ep3_3|Add0~5   ; |ep3_3|Add0~5    ; out0             ;
+; |ep3_3|Add0~6   ; |ep3_3|Add0~6    ; out0             ;
+; |ep3_3|Add0~8   ; |ep3_3|Add0~8    ; out0             ;
+; |ep3_3|Add0~9   ; |ep3_3|Add0~9    ; out0             ;
+; |ep3_3|Add0~10  ; |ep3_3|Add0~10   ; out0             ;
+; |ep3_3|Add0~11  ; |ep3_3|Add0~11   ; out0             ;
+; |ep3_3|Add0~13  ; |ep3_3|Add0~13   ; out0             ;
+; |ep3_3|Add0~14  ; |ep3_3|Add0~14   ; out0             ;
+; |ep3_3|Add0~15  ; |ep3_3|Add0~15   ; out0             ;
+; |ep3_3|Add0~16  ; |ep3_3|Add0~16   ; out0             ;
+; |ep3_3|Add0~18  ; |ep3_3|Add0~18   ; out0             ;
+; |ep3_3|Add0~19  ; |ep3_3|Add0~19   ; out0             ;
+; |ep3_3|Add0~20  ; |ep3_3|Add0~20   ; out0             ;
+; |ep3_3|Add0~21  ; |ep3_3|Add0~21   ; out0             ;
+; |ep3_3|Add0~23  ; |ep3_3|Add0~23   ; out0             ;
+; |ep3_3|Add0~24  ; |ep3_3|Add0~24   ; out0             ;
+; |ep3_3|Add0~25  ; |ep3_3|Add0~25   ; out0             ;
+; |ep3_3|Add0~26  ; |ep3_3|Add0~26   ; out0             ;
+; |ep3_3|Add0~28  ; |ep3_3|Add0~28   ; out0             ;
+; |ep3_3|Add0~29  ; |ep3_3|Add0~29   ; out0             ;
+; |ep3_3|Add0~30  ; |ep3_3|Add0~30   ; out0             ;
+; |ep3_3|Add0~31  ; |ep3_3|Add0~31   ; out0             ;
+; |ep3_3|Add1~1   ; |ep3_3|Add1~1    ; out0             ;
+; |ep3_3|Add1~4   ; |ep3_3|Add1~4    ; out0             ;
+; |ep3_3|Add1~7   ; |ep3_3|Add1~7    ; out0             ;
+; |ep3_3|Add1~9   ; |ep3_3|Add1~9    ; out0             ;
+; |ep3_3|Add1~12  ; |ep3_3|Add1~12   ; out0             ;
+; |ep3_3|Add1~14  ; |ep3_3|Add1~14   ; out0             ;
+; |ep3_3|Add1~17  ; |ep3_3|Add1~17   ; out0             ;
+; |ep3_3|Add1~19  ; |ep3_3|Add1~19   ; out0             ;
+; |ep3_3|Add1~22  ; |ep3_3|Add1~22   ; out0             ;
+; |ep3_3|Add1~24  ; |ep3_3|Add1~24   ; out0             ;
+; |ep3_3|Add1~27  ; |ep3_3|Add1~27   ; out0             ;
+; |ep3_3|Equal1~0 ; |ep3_3|Equal1~0  ; out0             ;
+; |ep3_3|Equal2~0 ; |ep3_3|Equal2~0  ; out0             ;
+; |ep3_3|Equal3~0 ; |ep3_3|Equal3~0  ; out0             ;
+; |ep3_3|Equal4~0 ; |ep3_3|Equal4~0  ; out0             ;
++-----------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Dec 01 21:28:09 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ep3_3 -c ep3_3
+Info: Using vector source file "C:/Users/istil/Desktop/istillmessup/Quartus/ep3/ep3_3/ep3_3.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      49.69 %
+Info: Number of transitions in simulation is 260
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 178 megabytes
+    Info: Processing ended: Sat Dec 01 21:28:09 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
